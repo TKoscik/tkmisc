@@ -20,7 +20,7 @@ good.color <- function(type = c("cool", "warm", "neon", "neon-bright"), n=21) {
         colorRampPalette(c("#e85285", "#ffecb3"))(6)[-1],
         colorRampPalette(c("#ffecb3", "#ffffff"))(5)[-1]))(n)
   } else if (type == "neon-bright") {
-    colors <- colorRampPalette("#000000", "#0000ff", "#ff00ff", "#ffff00", "#ffffff")(n)
+    colors <- colorRampPalette(c("#000000", "#0000ff", "#ff00ff", "#ffff00", "#ffffff"))(n)
   }
   return(colors)
 }

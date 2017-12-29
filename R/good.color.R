@@ -1,4 +1,4 @@
-good.color <- function(type = c("cool", "warm", "neon", "neon-bright"), n=21) {
+good.color <- function(type = c("cool", "warm", "neon", "neon-bright"), n=18) {
   
   if (length(type) == 3) { type <- "neon-bright" }
   

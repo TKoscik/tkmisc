@@ -1,2 +1,2 @@
-# tk.r.misc
+# tkmisc
 TKoscik's Miscellaneous R Functions

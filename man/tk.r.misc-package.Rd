@@ -1,22 +1,22 @@
-\name{tk.r.misc-package}
-\alias{tk.r.misc-package}
-\alias{tk.r.misc}
+\name{tkmisc-package}
+\alias{tkmisc-package}
+\alias{tkmisc}
 \docType{package}
 \title{
-\packageTitle{tk.r.misc}
+\packageTitle{tkmisc}
 }
 \description{
-\packageDescription{tk.r.misc}
+\packageDescription{tkmisc}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{tk.r.misc}
-\packageIndices{tk.r.misc}
+\packageDESCRIPTION{tkmisc}
+\packageIndices{tkmisc}
 TKoscik's Miscellaneous Functions
 }
 \author{
-\packageAuthor{tk.r.misc}
+\packageAuthor{tkmisc}
 
-Maintainer: \packageMaintainer{tk.r.misc}
+Maintainer: \packageMaintainer{tkmisc}
 }

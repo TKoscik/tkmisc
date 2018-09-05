@@ -9,8 +9,9 @@ bt_summarizer <- function(data.dir,
                     full.names = T, 
                     pattern = "dustCleaned")
   
-  ursi <- as.numeric(unlist(strsplit(fls, "/"))[seq(8,5874,11)])
-  mrqid <- as.numeric(unlist(strsplit(fls, "/"))[seq(9,5874,11)])
+  temp.id <- as.numeric(na.omit(unname(as.numeric(unlist(strsplit(fls, "/"))))))
+  ursi <- temp.id[seq(1,length(temp.id),2)]
+  mrqid <- temp.id[seq(2,length(temp.id),2)]
   
   # copy to scratch to unzip
   for (i in 1:length(mrqid)) {

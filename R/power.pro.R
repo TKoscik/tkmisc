@@ -43,8 +43,10 @@ power.pro <- function (df, var.adj, var.pro,
   if (save.params) {
     output <- list()
     output$df <- df
-    output$a <- unlist(pwr.params)[1,2*n.adj,2]
-    output$b <- unlist(pwr.params)[2,2*n.adj,2]
+    output$a <- unlist(pwr.params)[seq(1,2*n.adj,2)]
+    names(output$a) <- var.adj
+    output$b <- unlist(pwr.params)[seq(2,2*n.adj,2)]
+    names(output$b) <- var.adj
   }
   else {
     output <- df

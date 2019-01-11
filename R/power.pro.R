@@ -27,10 +27,10 @@ power.pro <- function (df, var.adj, var.pro,
     pwr.params[[i]] <- tryCatch({
       pwr.mdl <- nls(FORM, data = df, start = list(a = a.start[i], b = b.start[i]), 
                      control = nls.control(maxiter = 1000))
-      return(summary(pwr.mdl)$coef[1:2, 1])
+      summary(pwr.mdl)$coef[1:2, 1]
     }, error = function(e) {
       warning("[POWER.PRO] non-linear model did not work with current parameters. Try altering initial values of a and/or b.")
-      return(c(NA,NA))
+      c(NA,NA)
     })
   }
   

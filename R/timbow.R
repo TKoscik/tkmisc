@@ -4,4 +4,5 @@ timbow <- function(n=10, reverse=F) {
   if (reverse) {
     output <- rev(output)
   }
+  return(output)
 }

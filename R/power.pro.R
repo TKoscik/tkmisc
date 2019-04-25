@@ -9,7 +9,7 @@ power.pro <- function (df, var.adj, var.pro,
   if (length(var.pro) == 1) {
     var.pro <- rep(var.pro, n.adj)
   } else if (length(var.pro) != n.adj) {
-    stop("Length of the vecetor specifying var.pro must either be a single value or match the length of var.adj")
+    stop("Length of the vector specifying var.pro must either be a single value or match the length of var.adj")
   }
   
   if (length(a.start) == 1) {
